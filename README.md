@@ -1,4 +1,4 @@
-# MVVM Architecture, Room Database and RxJava
+# MVVM Architecture, Room Database, Retrofit and RxJava
 
 This is a sample app that implements the above mentioned technologies. The App has an authentcation features where the user has to create and sign in to his/her account. 
 </br> </br>
