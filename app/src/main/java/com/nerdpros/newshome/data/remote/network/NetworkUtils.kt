@@ -3,6 +3,8 @@ package com.nerdpros.newshome.data.remote.network
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
+import com.jakewharton.processphoenix.ProcessPhoenix
+import com.nerdpros.newshome.App
 
 /**
  * @Author: Angatia Benson
@@ -29,6 +31,10 @@ fun AppCompatActivity.handleApiError(
             "Please check your internet connection",
             retry
         )
+
+        failure.errorCode == 401 -> {
+            ProcessPhoenix.triggerRebirth(App.application.applicationContext);
+        }
 
         else -> {
             val error = failure.errorBody?.string().toString()
