@@ -16,7 +16,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/toolbar">
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -27,7 +28,6 @@
                 android:id="@+id/profileImage"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/logo"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,7 +38,6 @@
                 android:background="@drawable/rank_background"
                 android:textAppearance="?textAppearanceHeadline6"
                 android:gravity="center"
-                android:text="3"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="@id/profileImage"
@@ -51,7 +50,6 @@
                 android:layout_marginStart="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:text="Angatia Benson"
                 android:textAppearance="?textAppearanceHeadline6"
                 android:textStyle="bold"
                 android:layout_marginTop="16dp"
@@ -59,7 +57,6 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Kenya"
                 android:textAppearance="?textAppearanceBody1"
                 app:layout_constraintStart_toEndOf="@id/profileImage"
                 app:layout_constraintTop_toBottomOf="@id/txtName"
@@ -69,7 +66,6 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="23 yrs old (M)"
                 android:textAppearance="?textAppearanceBody1"
                 app:layout_constraintStart_toEndOf="@id/profileImage"
                 app:layout_constraintTop_toBottomOf="@id/txtCountry"
@@ -79,7 +75,6 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="1000 points"
                 android:textAppearance="?textAppearanceBody1"
                 app:layout_constraintStart_toEndOf="@id/profileImage"
                 app:layout_constraintTop_toBottomOf="@id/txtAge"
@@ -87,6 +82,7 @@
                 android:layout_marginStart="8dp"
                 android:id="@+id/txtPoints"/>
             <TextView
+                android:id="@+id/txtDescription"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"

@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/angatia/AndroidStudioProjects/NewsHome/app/src/main/res/drawable/ic_baseline_error_outline_24.xml" value="0.138" />
+        <entry key="..\:/Users/angatia/AndroidStudioProjects/NewsHome/app/src/main/res/drawable/ic_close.xml" value="0.1415" />
+        <entry key="..\:/Users/angatia/AndroidStudioProjects/NewsHome/app/src/main/res/drawable/ic_delete.xml" value="0.1415" />
         <entry key="..\:/Users/angatia/AndroidStudioProjects/NewsHome/app/src/main/res/drawable/rank_background.xml" value="0.1385" />
         <entry key="..\:/Users/angatia/AndroidStudioProjects/NewsHome/app/src/main/res/layout/activity_main.xml" value="0.20677083333333332" />
         <entry key="..\:/Users/angatia/AndroidStudioProjects/NewsHome/app/src/main/res/layout/activity_player_profile.xml" value="0.20677083333333332" />
@@ -12,6 +14,7 @@
         <entry key="..\:/Users/angatia/AndroidStudioProjects/NewsHome/app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="..\:/Users/angatia/AndroidStudioProjects/NewsHome/app/src/main/res/layout/loading_view.xml" value="0.20358974358974358" />
         <entry key="..\:/Users/angatia/AndroidStudioProjects/NewsHome/app/src/main/res/layout/player_item.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/angatia/AndroidStudioProjects/NewsHome/app/src/main/res/menu/profile_menu.xml" value="0.20677083333333332" />
       </map>
     </option>
   </component>
