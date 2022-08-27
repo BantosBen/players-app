@@ -16,3 +16,4 @@ data class SignUp(
     val name: String,
     val password: String
 )
+

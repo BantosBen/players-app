@@ -19,6 +19,9 @@
         tools:replace="android:icon"
         tools:targetApi="31">
         <activity
+            android:name=".ui.player.PlayerProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.main.MainActivity"
             android:exported="false" />
         <activity
