@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.GenderActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="?background">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Player Gender"
+            android:id="@+id/toolbar"
+            app:navigationIcon="@drawable/ic_close"/>
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            android:id="@+id/smartTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:stl_clickable="true"
+            app:stl_defaultTabTextAllCaps="true"
+            app:stl_defaultTabTextColor="@color/grey_500"
+            app:stl_defaultTabTextHorizontalPadding="16dp"
+            app:stl_defaultTabTextMinWidth="0dp"
+            app:stl_distributeEvenly="true"
+            app:stl_dividerColor="@color/grey_700"
+            app:stl_dividerThickness="0dp"
+            app:stl_drawDecorationAfterTab="false"
+            app:stl_indicatorAlwaysInCenter="false"
+            app:stl_indicatorColor="@color/amberColor"
+            app:stl_indicatorCornerRadius="15dp"
+            app:stl_indicatorGravity="top"
+            app:stl_indicatorInFront="false"
+            app:stl_indicatorInterpolation="smart"
+            app:stl_indicatorThickness="4dp"
+            app:stl_indicatorWidth="auto"
+            app:stl_indicatorWithoutPadding="false"
+            app:stl_overlineColor="@color/white"
+            app:stl_overlineThickness="0dp"
+            app:stl_titleOffset="24dp"
+            app:stl_underlineColor="@color/white"
+            app:stl_underlineThickness="0dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,9 @@
-package com.nerdpros.newshome.ui.player
+package com.nerdpros.newshome.ui.activities.player
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.nerdpros.newshome.data.remote.network.Resource
+import com.nerdpros.newshome.data.remote.response.Resource
 import com.nerdpros.newshome.data.remote.repository.PlayersRepository
 import com.nerdpros.newshome.data.remote.response.DefaultResponse
 import com.nerdpros.newshome.data.remote.response.GetPlayerDetailsResponse
@@ -71,7 +71,7 @@ class PlayerProfileActivityViewModel : ViewModel() {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeWith(object : DisposableSingleObserver<DefaultResponse>() {
                     override fun onSuccess(response: DefaultResponse) {
-                        _deleteResponse.value=Resource.Success(response)
+                        _deleteResponse.value= Resource.Success(response)
                     }
 
                     override fun onError(throwable: Throwable) {

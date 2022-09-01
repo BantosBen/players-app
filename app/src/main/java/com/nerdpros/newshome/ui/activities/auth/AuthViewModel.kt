@@ -1,4 +1,4 @@
-package com.nerdpros.newshome.ui.auth
+package com.nerdpros.newshome.ui.activities.auth
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.nerdpros.newshome.data.local.entity.UserEntity
 import com.nerdpros.newshome.data.local.repo.UserRepository
-import com.nerdpros.newshome.data.remote.network.Resource
+import com.nerdpros.newshome.data.remote.response.Resource
 import com.nerdpros.newshome.data.remote.repository.AuthRepository
 import com.nerdpros.newshome.data.remote.response.DefaultResponse
 import com.nerdpros.newshome.data.remote.response.LoginResponse

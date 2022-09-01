@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.nerdpros.newshome">
+    package="com.nerdpros.newshome" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -17,22 +17,25 @@
         android:theme="@style/Theme.newshome"
         android:usesCleartextTraffic="true"
         tools:replace="android:icon"
-        tools:targetApi="31">
+        tools:targetApi="31" >
         <activity
-            android:name=".ui.player.PlayerProfileActivity"
+            android:name=".ui.activities.GenderActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name=".ui.activities.player.PlayerProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.auth.SignUpActivity"
+            android:name=".ui.activities.main.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.auth.SignInActivity"
+            android:name=".ui.activities.auth.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.SplashActivity"
-            android:exported="true">
+            android:name=".ui.activities.auth.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.SplashActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
