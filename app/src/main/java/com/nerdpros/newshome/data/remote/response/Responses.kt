@@ -29,7 +29,7 @@ data class UserModelResponse(
 data class GetPlayersResponse(
     @SerializedName("error") val error: Boolean,
     @SerializedName("message") val message: String,
-    @SerializedName("players") val players: List<Player>
+    @SerializedName("players") val players: List<Player>?
 )
 
 data class GetPlayerDetailsResponse(

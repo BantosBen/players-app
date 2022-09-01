@@ -27,7 +27,6 @@ object CustomDialog {
         progressDialog.dismiss()
     }
 
-
     fun toast(message: String) =
         Toast.makeText(App.application.applicationContext, message, Toast.LENGTH_LONG).show()
 }

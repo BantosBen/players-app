@@ -1,4 +1,4 @@
-package com.nerdpros.newshome.ui.player
+package com.nerdpros.newshome.ui.activities.player
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -7,7 +7,7 @@ import android.view.MenuItem
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.nerdpros.newshome.R
-import com.nerdpros.newshome.data.remote.network.Resource
+import com.nerdpros.newshome.data.remote.response.Resource
 import com.nerdpros.newshome.data.remote.network.handleApiError
 import com.nerdpros.newshome.data.remote.response.Player
 import com.nerdpros.newshome.databinding.ActivityPlayerProfileBinding

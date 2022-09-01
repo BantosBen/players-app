@@ -11,7 +11,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.nerdpros.newshome.R
 import com.nerdpros.newshome.data.remote.response.Player
-import com.nerdpros.newshome.ui.player.PlayerProfileActivity
+import com.nerdpros.newshome.ui.activities.player.PlayerProfileActivity
 import com.nerdpros.newshome.util.getProgressDrawable
 import com.nerdpros.newshome.util.loadImage
 import de.hdodenhof.circleimageview.CircleImageView

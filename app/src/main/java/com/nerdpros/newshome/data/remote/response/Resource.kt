@@ -1,4 +1,4 @@
-package com.nerdpros.newshome.data.remote.network
+package com.nerdpros.newshome.data.remote.response
 
 import okhttp3.ResponseBody
 

@@ -1,9 +1,9 @@
-package com.nerdpros.newshome.ui.main
+package com.nerdpros.newshome.ui.activities.main
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.nerdpros.newshome.data.remote.network.Resource
+import com.nerdpros.newshome.data.remote.response.Resource
 import com.nerdpros.newshome.data.remote.repository.PlayersRepository
 import com.nerdpros.newshome.data.remote.response.GetPlayersResponse
 import io.reactivex.android.schedulers.AndroidSchedulers

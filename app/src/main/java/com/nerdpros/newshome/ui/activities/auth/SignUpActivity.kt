@@ -1,9 +1,9 @@
-package com.nerdpros.newshome.ui.auth
+package com.nerdpros.newshome.ui.activities.auth
 
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.nerdpros.newshome.data.remote.network.Resource
+import com.nerdpros.newshome.data.remote.response.Resource
 import com.nerdpros.newshome.data.remote.network.handleApiError
 import com.nerdpros.newshome.databinding.ActivitySignUpBinding
 import com.nerdpros.newshome.util.CustomDialog
