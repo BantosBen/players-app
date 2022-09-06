@@ -15,5 +15,6 @@ data class UserEntity(
     @PrimaryKey val uid: String,
     val email: String,
     val name: String,
+    val image: String,
     @ColumnInfo(name = "session_token") val sessionToken: String
 )

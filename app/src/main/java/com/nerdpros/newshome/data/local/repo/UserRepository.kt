@@ -1,6 +1,5 @@
 package com.nerdpros.newshome.data.local.repo
 
-import androidx.lifecycle.LiveData
 import com.nerdpros.newshome.data.local.AppDatabase
 import com.nerdpros.newshome.data.local.dao.UserDAO
 import com.nerdpros.newshome.data.local.entity.UserEntity
@@ -20,9 +19,9 @@ class UserRepository {
 
     suspend fun saveUser(userEntity: UserEntity) = userDAO.saveUser(userEntity)
 
-    fun updateUser(userEntity: UserEntity) = userDAO.updateUser(userEntity)
+    suspend fun updateUser(userEntity: UserEntity) = userDAO.updateUser(userEntity)
 
-    fun removeUser(userEntity: UserEntity) = userDAO.removeUser(userEntity)
+    suspend fun removeUser(userEntity: UserEntity) = userDAO.removeUser(userEntity)
 
-    fun getUser(): LiveData<UserEntity> = userDAO.getUser()
+    suspend fun getUser(): UserEntity = userDAO.getUser()
 }

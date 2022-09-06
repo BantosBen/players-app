@@ -1,10 +1,12 @@
 package com.nerdpros.newshome.ui.activities.auth
 
 import android.os.Bundle
+import android.text.TextUtils
+import android.util.Patterns
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.nerdpros.newshome.data.remote.response.Resource
 import com.nerdpros.newshome.data.remote.network.handleApiError
+import com.nerdpros.newshome.data.remote.response.Resource
 import com.nerdpros.newshome.databinding.ActivitySignUpBinding
 import com.nerdpros.newshome.util.CustomDialog
 
@@ -72,11 +74,20 @@ class SignUpActivity : AppCompatActivity() {
             return
         }
 
+        if (!isValidMail(binding.edEmail.text.toString().trim())) {
+            binding.edEmail.error = "Invalid Email"
+            return
+        }
+
         viewModel.signup(
             binding.edEmail.text.toString(),
             binding.edName.text.toString(),
             binding.edPassword.text.toString()
         )
+    }
+
+    private fun isValidMail(target: CharSequence): Boolean {
+        return !TextUtils.isEmpty(target) && Patterns.EMAIL_ADDRESS.matcher(target).matches()
     }
 
 }

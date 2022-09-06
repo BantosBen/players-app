@@ -30,10 +30,15 @@ class PrefManager() {
 
     fun saveSessionToken(sessionToken: String) {
         editor!!.putString(SESSION_TOKEN, sessionToken)
+        editor!!.putBoolean(IS_LOGGED_IN, true)
         editor!!.commit()
     }
 
     fun getSessionToken(): String? {
         return pref!!.getString(SESSION_TOKEN, "no-token")
+    }
+
+    fun isLoggedIn(): Boolean {
+        return pref!!.getBoolean(IS_LOGGED_IN, false)
     }
 }

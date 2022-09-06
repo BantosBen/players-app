@@ -17,11 +17,11 @@ interface UserDAO {
     suspend fun saveUser(userEntity: UserEntity)
 
     @Update
-    fun updateUser(userEntity: UserEntity)
+    suspend fun updateUser(userEntity: UserEntity)
 
     @Delete
-    fun removeUser(userEntity: UserEntity)
+    suspend fun removeUser(userEntity: UserEntity)
 
     @Query("SELECT * FROM `user` LIMIT 1")
-    fun getUser(): LiveData<UserEntity>
+    suspend fun getUser(): UserEntity
 }
