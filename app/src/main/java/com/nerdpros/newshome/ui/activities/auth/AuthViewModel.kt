@@ -75,6 +75,7 @@ class AuthViewModel : ViewModel() {
                 _user.id,
                 _user.email,
                 _user.name,
+                _user.image,
                 _user.sessionToken
             )
         )

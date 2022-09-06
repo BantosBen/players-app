@@ -1,10 +1,10 @@
 package com.nerdpros.newshome.util
 
 import android.content.Context
-import android.widget.ImageView
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import com.bumptech.glide.signature.ObjectKey
 import com.nerdpros.newshome.R
 import de.hdodenhof.circleimageview.CircleImageView
 
@@ -26,6 +26,7 @@ fun CircleImageView.loadImage(url: String?, progressDrawable: CircularProgressDr
     val options = RequestOptions
         .placeholderOf(progressDrawable)
         .error(R.mipmap.ic_launcher)
+        .signature(ObjectKey(System.currentTimeMillis().toString()))
     Glide.with(this.context)
         .setDefaultRequestOptions(options)
         .load(url)

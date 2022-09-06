@@ -7,6 +7,7 @@ import com.nerdpros.newshome.data.remote.response.LoginResponse
 import com.nerdpros.newshome.model.Login
 import com.nerdpros.newshome.model.SignUp
 import io.reactivex.Single
+import okhttp3.MultipartBody
 import retrofit2.http.*
 
 /**
@@ -34,8 +35,14 @@ interface ApiServices {
     fun deletePlayer(@Path("id") id: String): Single<DefaultResponse>
 
     @PUT("account/update")
-    fun updateAccount(@Body _signup: SignUp): Single<GetPlayersResponse>
+    fun updateAccount(@Body _signup: SignUp): Single<DefaultResponse>
 
-    @DELETE("account/update")
-    fun deleteAccount(): Single<DefaultResponse>
+    @DELETE("account/delete/{id}")
+    fun deleteAccount(@Path("id") id: String): Single<DefaultResponse>
+
+    @Multipart
+    @POST("account/upload")
+    fun uploadProfile(
+        @Part part: MultipartBody.Part
+    ): Single<DefaultResponse>
 }

@@ -23,6 +23,7 @@ data class UserModelResponse(
     @SerializedName("id") val id: String,
     @SerializedName("email") val email: String,
     @SerializedName("name") val name: String,
+    @SerializedName("image") val image: String,
     @SerializedName("session_token") val sessionToken: String
 )
 

@@ -15,6 +15,7 @@ import com.nerdpros.newshome.data.remote.response.Player
 import com.nerdpros.newshome.data.remote.response.Resource
 import com.nerdpros.newshome.databinding.ActivityMainBinding
 import com.nerdpros.newshome.ui.activities.GenderActivity
+import com.nerdpros.newshome.ui.activities.profile.ProfileActivity
 import com.nerdpros.newshome.util.CustomDialog
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -53,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(baseContext, GenderActivity::class.java))
             }
             R.id.menuProfile -> {
-
+                startActivity(Intent(baseContext, ProfileActivity::class.java))
             }
         }
         return super.onOptionsItemSelected(item)
